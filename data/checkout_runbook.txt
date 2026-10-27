@@ -1,0 +1,11 @@
+Checkout Incident Runbook
+
+For a failed PayPal Pay Later checkout, first capture a unique correlation ID and
+checkout attempt timestamp. Verify API gateway and payment-orchestration logs for
+the same correlation ID. Check whether the provider returned a timeout, declined
+payment, or completed authorization. Never retry a possibly successful authorization
+without checking idempotency keys and the existing payment state.
+
+Severity-1 checkout incidents require on-call escalation immediately. Gather logs,
+service dashboards, the affected region, and customer impact estimates. Escalate
+to the incident commander, then execute the approved mitigation runbook.

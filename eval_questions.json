@@ -1,0 +1,6 @@
+[
+  {"question": "How should we handle flaky Playwright tests?", "expected_sources": ["qe_playbook.md"]},
+  {"question": "What do we do when a PayPal Pay Later checkout fails?", "expected_sources": ["checkout_runbook.txt"]},
+  {"question": "What are the release quality gates?", "expected_sources": ["qe_playbook.md"]},
+  {"question": "Which API test validations are required?", "expected_sources": ["qe_playbook.md"]}
+]
